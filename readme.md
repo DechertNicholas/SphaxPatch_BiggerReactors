@@ -29,7 +29,7 @@ Credit goes to viesiu, Sparkst3r and HanFox for the original Big Reactors patch 
  the Extreme Reactors patch (as linked above). All artwork and other imagery are property of their respective owners, 
 and have been rehosted here with permission granted in the [Sphax mod patch support thread](https://bdcraft.net/community/releases-for-mods-f9/rules-read-this-before-posting-mod-support-patch-t312.html). 
 
-I take no credit for the artwork or imagry.
+I take no credit for the artwork or imagery.
 
 ## Mods
 The Big Reactors mod is property of [ErogenousBeef](http://www.big-reactors.com/#/).
