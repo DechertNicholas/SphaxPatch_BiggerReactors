@@ -1,2 +1,4 @@
 # Destination for finished packs
 output/
+# Working dir for building and compressing the packs
+updated/

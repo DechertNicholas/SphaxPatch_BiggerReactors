@@ -4,7 +4,7 @@ $textureMapping = Import-Csv .\mapping.csv -Delimiter ','
 $textureSizes = @( "32", "64", "128", "256", "512" )
 
 # Clear old texture work folders
-Remove-Item -Recurse -Path .\updated\Sphax*
+Remove-Item -Recurse -Path .\updated\Sphax* -ErrorAction Ignore
 # Clear old built texture packs
 if (Test-Path .\output) {
     Remove-Item -Path .\output\*.zip
@@ -30,8 +30,8 @@ foreach ($ts in $textureSizes) {
     }
 
     # Copy the updated pack data
-    Copy-Item -Path .\updated\pack.mcmeta -Destination $updatePath
-    Copy-Item -Path .\updated\pack.png -Destination $updatePath
+    Copy-Item -Path .\packInfoFiles\pack.mcmeta -Destination $updatePath
+    Copy-Item -Path .\packInfoFiles\pack.png -Destination $updatePath
 
     <# EXTRAS
     These are things that need to be edited or weren't present in the original texture pack
