@@ -3,9 +3,14 @@ $MC_VERSION = "116"
 $textureMapping = Import-Csv .\mapping.csv -Delimiter ','
 $textureSizes = @( "32", "64", "128", "256", "512" )
 
-# clear old textures
-Remove-Item -Recurse -Path .\updated\*
+# Clear old texture work folders
+Remove-Item -Recurse -Path .\updated\Sphax*
+# Clear old built texture packs
+if (Test-Path .\output) {
+    Remove-Item -Path .\output\*.zip
+}
 
+# Create each pack for each size
 foreach ($ts in $textureSizes) {
     $referencePath = ".\reference\Sphax_BigReactors_$($ts)x\"
     $updatePath =    ".\updated\Sphax_BiggerReactors_$($ts)x_$($MC_VERSION)\"
@@ -20,11 +25,13 @@ foreach ($ts in $textureSizes) {
         }
         $originalName = $referencePath + $tx.Original
         $updatedName = $updatePath + $tx.Renamed
+        # Create destination dir if not existing and copy
         Copy-Item -Path $originalName -Destination "$(New-Item -Path (Split-Path -path $updatedName) -ItemType Directory -Force)\$(Split-Path -path $updatedName -Leaf)" -Force
     }
 
-    Copy-Item -Path .\pack.mcmeta -Destination $updatePath
-    Copy-Item -Path .\pack.png -Destination $updatePath
+    # Copy the updated pack data
+    Copy-Item -Path .\updated\pack.mcmeta -Destination $updatePath
+    Copy-Item -Path .\updated\pack.png -Destination $updatePath
 
     <# EXTRAS
     These are things that need to be edited or weren't present in the original texture pack
@@ -53,5 +60,8 @@ foreach ($ts in $textureSizes) {
 
     # PowerShell's Compress-Archive has something weird with it, Minecraft can't read the textures from the zip if created this way
     # 7z works fine though
-    & 'C:\Program Files\7-Zip\7z.exe' a "Sphax_BiggerReactors_$($ts)x_$($MC_VERSION).zip" ".\updated\Sphax_BiggerReactors_$($ts)x_$($MC_VERSION)\*"
+    if ((Test-Path .\output) -eq $false) {
+        New-Item -Name output -ItemType Directory
+    }
+    & 'C:\Program Files\7-Zip\7z.exe' a "output\Sphax_BiggerReactors_$($ts)x_$($MC_VERSION).zip" ".\updated\Sphax_BiggerReactors_$($ts)x_$($MC_VERSION)\*"
 }
