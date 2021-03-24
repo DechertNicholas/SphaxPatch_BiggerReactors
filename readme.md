@@ -25,7 +25,7 @@ please include the following:
 
 # Credits
 ## Artwork
-Credit goes to viesiu and HanFox for the original Big Reactors patch (as linked above), and Novamanga and HanFox for
+Credit goes to viesiu, Sparkst3r and HanFox for the original Big Reactors patch (as linked above), and Novamanga and HanFox for
  the Extreme Reactors patch (as linked above). All artwork and other imagery are property of their respective owners, 
 and have been rehosted here with permission granted in the [Sphax mod patch support thread](https://bdcraft.net/community/releases-for-mods-f9/rules-read-this-before-posting-mod-support-patch-t312.html). 
 
