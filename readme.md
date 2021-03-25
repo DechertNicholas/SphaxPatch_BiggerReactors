@@ -8,6 +8,9 @@ for Minecraft 1.12, updated for the official continuation of Big Reactors,
 the only Sphax patch for Bigger Reactors, so textures will continue to be updated/added here as more functionality
 is added to the Bigger Reactors mod.
 
+Check the [BDCraft forum post](https://bdcraft.net/community/releases-for-mods-f9/bigger-reactors-t8193.html) for
+more details.
+
 ## Contributing
 If you would like to contribute to the patch, please submit a pull request. You may open a draft pull request if 
 you would like to discuss the changes before beginning work.
