@@ -1,0 +1,22 @@
+{
+    "variants": {
+      "assembled=false,facing=north": {
+        "model": "biggerreactors:block/reactor/terminal/off"
+      },
+      "assembled=false,facing=east": {
+        "model": "biggerreactors:block/reactor/terminal/off", "y": 90
+      },
+      "assembled=false,facing=south": {
+        "model": "biggerreactors:block/reactor/terminal/off", "y": 180
+      },
+      "assembled=false,facing=west": {
+        "model": "biggerreactors:block/reactor/terminal/off", "y": 270
+      },
+      "assembled=true,reactoractivity=active": {
+        "model": "biggerreactors:block/reactor/terminal/active"
+      },
+      "assembled=true,reactoractivity=inactive": {
+        "model": "biggerreactors:block/reactor/terminal/idle"
+      }
+    }
+  }

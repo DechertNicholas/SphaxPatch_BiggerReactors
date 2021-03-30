@@ -58,6 +58,13 @@ foreach ($ts in $textureSizes) {
 
     Copy-Item -Path $turbineControllerSourcePath\tile.blockTurbinePart.controller.active-cropped.png -Destination $turbineControllerUpdatePath\turbine_terminal_active.png
 
+    <# 
+    New changes
+    New changes to textures and new textures that have been made that need to be injected
+    #>
+    # Copy changes that affect all texture pack sizes
+    Copy-Item .\customChanges\allSizes\assets $updatePath -Recurse -Force
+
     # PowerShell's Compress-Archive has something weird with it, Minecraft can't read the textures from the zip if created this way
     # 7z works fine though
     if ((Test-Path .\output) -eq $false) {

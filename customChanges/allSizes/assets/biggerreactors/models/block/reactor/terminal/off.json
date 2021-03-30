@@ -1,0 +1,9 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+      "top": "biggerreactors:block/reactor_casing_disassembled",
+      "front": "biggerreactors:block/reactor_terminal_off",
+      "side": "biggerreactors:block/reactor_casing_disassembled"
+    }
+  }
+  
