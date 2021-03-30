@@ -73,6 +73,7 @@ assets\bigreactors\textures\blocks\tile.blockTurbinePart.bearing.png,assets\bigg
 assets\bigreactors\textures\blocks\tile.blockTurbineRotorPart.blade.png,assets\biggerreactors\textures\block\turbine_rotor_blade.png
 assets\bigreactors\textures\blocks\tile.blockTurbineRotorPart.rotor.png,assets\biggerreactors\textures\block\turbine_rotor_shaft.png
 assets\bigreactors\textures\blocks\tile.blockTurbinePart.controller.active.png,assets\biggerreactors\textures\block\turbine_terminal_active.png
+assets\bigreactors\textures\blocks\tile.blockTurbinePart.controller.active.png.mcmeta,assets\biggerreactors\textures\block\turbine_terminal_active.png.mcmeta
 assets\bigreactors\textures\blocks\tile.blockTurbinePart.controller.idle.png,assets\biggerreactors\textures\block\turbine_terminal_idle.png
 assets\bigreactors\textures\blocks\tile.blockTurbinePart.controller.png,assets\biggerreactors\textures\block\turbine_terminal_off.png
 assets\bigreactors\textures\blocks\oreYellorite.png,assets\biggerreactors\textures\block\yellorite_ore.png
@@ -99,7 +100,6 @@ assets\bigreactors\textures\blocks\fluid.fuelColumn.flowing.png,assets\biggerrea
 assets\bigreactors\textures\blocks\fluid.fuelColumn.flowing.png.mcmeta,assets\biggerreactors\textures\fluid\yellorium_flowing.png.mcmeta
 assets\bigreactors\textures\blocks\fluid.fuelColumn.still.png,assets\biggerreactors\textures\fluid\yellorium_still.png
 assets\bigreactors\textures\blocks\fluid.fuelColumn.still.png.mcmeta,assets\biggerreactors\textures\fluid\yellorium_still.png.mcmeta
-,
 ,
 ,
 ,

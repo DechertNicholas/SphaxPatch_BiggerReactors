@@ -52,11 +52,9 @@ foreach ($ts in $textureSizes) {
         Copy-Item -Path $wrenchSourcePath\wrench.png -Destination $wrenchUpdatePath\debug_tool.png
     }
 
-    # The turbine controller is not animated anymore, so I cropped the png to one block state. That texture needs to be updated again now
-    $turbineControllerSourcePath = ".\reference\_editedFiles\Sphax_BigReactors_$($ts)x\assets\bigreactors\textures\blocks"
-    $turbineControllerUpdatePath = "$updatePath\assets\biggerreactors\textures\block"
-
-    Copy-Item -Path $turbineControllerSourcePath\tile.blockTurbinePart.controller.active-cropped.png -Destination $turbineControllerUpdatePath\turbine_terminal_active.png
+    # Update any file changes that affect all sizes
+    $allSizesSourcePath = ".\reference\_editedFiles\allSizes\assets"
+    Copy-Item -Path $allSizesSourcePath -Destination $updatePath -Force -Recurse
 
     # PowerShell's Compress-Archive has something weird with it, Minecraft can't read the textures from the zip if created this way
     # 7z works fine though
